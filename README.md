@@ -1,7 +1,7 @@
-# data-visualization
+# Data Visualization
  CSC196V
-# implementation
+# Implementation
  Using D3.js for interactive visualizations. For now, open index.html in localhost to view.
 
-# dataset
+# Dataset
 https://www.kaggle.com/juzershakir/tmdb-movies-dataset
