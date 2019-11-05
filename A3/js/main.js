@@ -12,33 +12,27 @@ $(document).ready(function() {
 
    // fullpage customization
    $("#fullpage").fullpage({
-      sectionsColor: ["#B8AE9C", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
+      sectionsColor: ["#B8AE9C", "#ffffff"],
       sectionSelector: ".vertical-scrolling",
       slideSelector: ".horizontal-scrolling",
       navigation: true,
       slidesNavigation: true,
       css3: true,
       controlArrows: false,
-      anchors: [
-         "firstSection",
-         "secondSection",
-         "thirdSection",
-         "fourthSection",
-         "fifthSection"
-      ],
+      anchors: ["firstSection", "secondSection"],
       menu: "#menu",
-      navigationTooltips: ["Intro", "1st Visualization", "Third and last page"],
+      navigationTooltips: ["Intro", "1st Visualization"],
 
       afterLoad: function(anchorLink, index) {
          $header_top.css("background", "rgba(0, 47, 77, .3)");
          $nav.css("background", "rgba(0, 47, 77, .25)");
-         if (index == 5) {
+         if (index == 2) {
             $("#fp-nav").hide();
          }
       },
 
       onLeave: function(index, nextIndex, direction) {
-         if (index == 5) {
+         if (index == 2) {
             $("#fp-nav").show();
          }
       },
