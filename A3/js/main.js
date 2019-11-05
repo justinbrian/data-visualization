@@ -27,7 +27,7 @@ $(document).ready(function() {
          "fifthSection"
       ],
       menu: "#menu",
-      navigationTooltips: ["Intro", "1st Visualization"],
+      navigationTooltips: ["Intro", "1st Visualization", "Third and last page"],
 
       afterLoad: function(anchorLink, index) {
          $header_top.css("background", "rgba(0, 47, 77, .3)");
