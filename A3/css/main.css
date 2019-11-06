@@ -260,6 +260,10 @@ section {
    /*background: url('https://unsplash.it/1910/1221?image=626') no-repeat center / cover;*/
 }
 
+#intro {
+   background-image: url("img/intro.jpg");
+}
+
 h2 {
    text-transform: lowercase;
    font-size: 4em;
