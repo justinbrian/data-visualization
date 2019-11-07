@@ -1,4 +1,4 @@
-# CSC196 V - Data Visualization
+# CSC196V - Data Visualization
  Projects.
 # Implementation
  Using D3.js for interactive visualizations. For now, open index.html in localhost to view.
