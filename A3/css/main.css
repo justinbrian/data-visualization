@@ -94,7 +94,6 @@
    margin: 0;
    padding: 0;
    font-family: "Alegreya Sans", Arial, sans-serif;
-   text-transform: uppercase;
 }
 
 html {
@@ -106,9 +105,28 @@ body {
    letter-spacing: 0.18em;
 }
 
+header,
+footer {
+   grid-column: 1 / span 2;
+}
+
+header,
+main,
+aside,
+footer {
+   background: #eaeaea;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
 a {
    text-decoration: none;
    color: white;
+}
+
+#link {
+   color: rgb(0, 119, 255);
 }
 
 ul,
@@ -242,7 +260,6 @@ nav li:nth-child(even) a {
 nav li:nth-child(odd) a:hover {
    background: #9e2f41;
 }
-
 nav li:nth-child(even) a:hover {
    background: #c53c52;
 }
@@ -257,15 +274,15 @@ body.fp-viewing-fifthSection-1 #menu li:last-child a {
 
 section {
    text-align: center;
-   /*background: url('https://unsplash.it/1910/1221?image=626') no-repeat center / cover;*/
+   background: linear-gradient(to top, #ffffff 0%, hsl(39, 100%, 71%) 100%);
 }
 
 #intro {
    background-image: url("img/intro.jpg");
+   background: linear-gradient(to bottom, #ffffff 0%, #641919 100%);
 }
 
 h2 {
-   text-transform: lowercase;
    font-size: 4em;
    margin-bottom: 20px;
 }
@@ -275,10 +292,9 @@ h3 {
    font-size: 2.8em;
 }
 
-h4 
-{
+h4 {
    font-weight: 350;
-   font-size: 1.5em;
+   font-size: 2em;
 }
 
 /* SLIDENAV STYLES - fullPage.js 
@@ -341,4 +357,17 @@ h4
    nav li a {
       padding: 3px;
    }
+}
+
+/* CUSTOM STYLES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.wrapper {
+   margin-right: auto; /* 1 */
+   margin-left: auto; /* 1 */
+
+   max-width: 1280px; /* 2 */
+
+   padding-right: 10px; /* 3 */
+   padding-left: 10px; /* 3 */
 }

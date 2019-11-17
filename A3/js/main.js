@@ -12,7 +12,7 @@ $(document).ready(function() {
 
    // fullpage customization
    $("#fullpage").fullpage({
-      sectionsColor: ["#B8AE9C", "#ffffff"],
+      sectionsColor: ["#ffffff", "#ffffff"],
       sectionSelector: ".vertical-scrolling",
       slideSelector: ".horizontal-scrolling",
       navigation: true,
@@ -21,12 +21,12 @@ $(document).ready(function() {
       controlArrows: false,
       anchors: ["firstSection", "secondSection"],
       menu: "#menu",
-      navigationTooltips: ["Intro", "1st Visualization"],
+      navigationTooltips: ["Intro", "Genres with highest release"],
 
       afterLoad: function(anchorLink, index) {
          $header_top.css("background", "rgba(0, 47, 77, .3)");
          $nav.css("background", "rgba(0, 47, 77, .25)");
-         if (index == 2) {
+         if (index == 3) {
             $("#fp-nav").hide();
          }
       },
