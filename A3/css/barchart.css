@@ -20,6 +20,11 @@
    display: none;
 }
 
+/* X axis labels. */
+.axis {
+   font: 15px sans-serif;
+}
+
 .d3-tip {
    line-height: 1;
    font-weight: bold;
