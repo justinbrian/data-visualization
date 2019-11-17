@@ -1,10 +1,8 @@
 // Using d3-tip to add tooltips to a d3 bar chart.
 
-var margin = {top: 40, right: 20, bottom: 30, left: 40},
+var margin = {top: 40, right: 20, bottom: 100, left: 60},
     width = 960 - margin.left - margin.right,
     height = 500 - margin.top - margin.bottom;
-
-var formatPercent = d3.format(".0%");
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
@@ -18,14 +16,13 @@ var xAxis = d3.svg.axis()
 
 var yAxis = d3.svg.axis()
     .scale(y)
-    .orient("left")
-    .tickFormat(formatPercent);
+    .orient("left");
 
 var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<strong>Frequency:</strong> <span style='color:red'>" + d.frequency + "</span>";
+    return "<strong>Releases:</strong> <span style='color:red'>" + d.Releases + "</span>";
   })
 
 //
@@ -45,38 +42,43 @@ var svg = d3.select("#section1").append("svg")
 svg.call(tip);
 
 d3.tsv("data.tsv", type, function(error, data) {
-  x.domain(data.map(function(d) { return d.letter; }));
-  y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
+  x.domain(data.map(function(d) { return d.Genre; }));
+  y.domain([0, d3.max(data, function(d) { return d.Releases; })]);
 
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+      .call(xAxis)
+      .selectAll("text")	
+        .style("text-anchor", "end")
+        .attr("dx", "-.8em")
+        .attr("dy", ".15em")
+        .attr("transform", "rotate(-65)");
 
   svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
     .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 6)
+      .attr("y", 0 - margin.left)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("Frequency");
+      .text("Releases");
 
   svg.selectAll(".bar")
       .data(data)
     .enter().append("rect")
       .attr("class", "bar")
-      .attr("x", function(d) { return x(d.letter); })
+      .attr("x", function(d) { return x(d.Genre); })
       .attr("width", x.rangeBand())
-      .attr("y", function(d) { return y(d.frequency); })
-      .attr("height", function(d) { return height - y(d.frequency); })
+      .attr("y", function(d) { return y(d.Releases); })
+      .attr("height", function(d) { return height - y(d.Releases); })
       .on('mouseover', tip.show)
       .on('mouseout', tip.hide)
 
 });
 
 function type(d) {
-  d.frequency = +d.frequency;
+  d.Releases = +d.Releases;
   return d;
 }
