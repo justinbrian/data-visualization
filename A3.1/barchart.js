@@ -1,8 +1,8 @@
 // Using d3-tip to add tooltips to a d3 bar chart.
 
-var margin = { top: 40, right: 20, bottom: 120, left: 80 },
-   width = 1280 - margin.left - margin.right,
-   height = 700 - margin.top - margin.bottom;
+var margin = { top: 40, right: 20, bottom: 100, left: 60 },
+   width = 960 - margin.left - margin.right,
+   height = 500 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal().rangeRoundBands([0, width], 0.1);
 
@@ -61,20 +61,16 @@ d3.tsv("data.tsv", type, function(error, data) {
       })
    ]);
 
-   // x axis data labels
    svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
       .selectAll("text")
       .style("text-anchor", "end")
-      .attr("font-size", "12px")
       .attr("dx", "-.8em")
       .attr("dy", ".15em")
-      .attr("transform", "rotate(-65)")
-      .attr("font-size", "13px");
+      .attr("transform", "rotate(-65)");
 
-   // y axis data labels
    svg.append("g")
       .attr("class", "y axis")
       .call(yAxis)
@@ -82,28 +78,7 @@ d3.tsv("data.tsv", type, function(error, data) {
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left)
       .attr("dy", ".71em")
-      .style("text-anchor", "end");
-
-   // text label for the x axis
-   svg.append("text")
-      .attr(
-         "transform",
-         "translate(" + width / 2 + " ," + (height + margin.top + 60) + ")"
-      )
-      .style("text-anchor", "middle")
-      .attr("font-size", "20px")
-      .attr("font-weight", "bold")
-      .text("Genre");
-
-   // text label for the y axis
-   svg.append("text")
-      .attr("transform", "rotate(-90)")
-      .attr("y", 0 - margin.left)
-      .attr("x", 0 - height / 2)
-      .attr("dy", "1em")
-      .style("text-anchor", "middle")
-      .attr("font-size", "20px")
-      .attr("font-weight", "bold")
+      .style("text-anchor", "end")
       .text("Releases");
 
    svg.selectAll(".bar")
