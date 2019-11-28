@@ -1,8 +1,8 @@
 // Using d3-tip to add tooltips to a d3 bar chart.
 
 var margin = { top: 40, right: 20, bottom: 120, left: 80 },
-   width = 800 ,
-   height = 500 ;
+   width = 800,
+   height = 500;
 
 var x = d3.scale.ordinal().rangeRoundBands([0, width], 0.1);
 
@@ -92,6 +92,7 @@ d3.tsv("static/data/data.tsv", type, function(error, data) {
       )
       .style("text-anchor", "middle")
       .attr("font-size", "20px")
+      .attr("x", 0 - height / 5)
       .attr("font-weight", "bold")
       .text("Genre");
 
