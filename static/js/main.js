@@ -19,20 +19,24 @@ $(document).ready(function() {
       slidesNavigation: true,
       css3: true,
       controlArrows: false,
-      anchors: ["firstSection", "secondSection"],
+      anchors: ["firstSection", "secondSection", "thirdSection"],
       menu: "#menu",
-      navigationTooltips: ["Intro", "Genres with highest release"],
+      navigationTooltips: [
+         "Intro",
+         "Genres with highest release",
+         "Word cloud"
+      ],
 
       afterLoad: function(anchorLink, index) {
          $header_top.css("background", "rgba(0, 47, 77, .3)");
          $nav.css("background", "rgba(0, 47, 77, .25)");
-         if (index == 3) {
+         if (index == 4) {
             $("#fp-nav").hide();
          }
       },
 
       onLeave: function(index, nextIndex, direction) {
-         if (index == 2) {
+         if (index == 4) {
             $("#fp-nav").show();
          }
       },
