@@ -23,12 +23,12 @@ var valueline = d3.svg.line()
     .y(function(d) { return y6(d.close); });
 
 // Define the div for the tooltip
-var div = d3.select("#section6").append("div")	
+var div = d3.select("#brushandzoom").append("div")	
     .attr("class", "tooltip")				
     .style("opacity", 0);
 
 // Adds the svg canvas
-var svg6 = d3.select("#section6")
+var svg6 = d3.select("#brushandzoom")
     .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)

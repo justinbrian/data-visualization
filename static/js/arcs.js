@@ -36,7 +36,7 @@ var arc = d3.svg
    .innerRadius(innerRadius);
 
 var svg2 = d3
-   .select("#section5")
+   .select("#arcs")
    .append("svg")
    .attr("width", width)
    .attr("height", height)
