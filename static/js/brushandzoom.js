@@ -1,21 +1,21 @@
-var margin = {top: 30, right: 20, bottom: 30, left: 50},
-    width = 900 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
+var margin6 = {top: 30, right: 20, bottom: 30, left: 50},
+    width6 = 900 - margin6.left - margin6.right,
+    height6 = 400 - margin6.top - margin6.bottom;
 
 // Parse the date / time
 var parseDate = d3.time.format("%d-%b-%y").parse;
 var formatTime = d3.time.format("%e %B");
 
 // Set the ranges
-var x6 = d3.scale.linear().range([0, width]);
-var y6 = d3.scale.linear().range([height, 0]);
+var x6 = d3.scale.linear().range([0, width6]);
+var y6 = d3.scale.linear().range([height6, 0]);
 
 // Define the axes
 var xAxis6 = d3.svg.axis().scale(x6)
-    .orient("bottom").ticks(10);
+    .orient("bottom");
 
 var yAxis6 = d3.svg.axis().scale(y6)
-    .orient("left").ticks(5);
+    .orient("left");
 
 // Define the line
 var valueline = d3.svg.line()
@@ -23,23 +23,23 @@ var valueline = d3.svg.line()
     .y(function(d) { return y6(d.close); });
 
 // Define the div for the tooltip
-var div = d3.select("#brushandzoom").append("div")	
+var div = d3.select("#section6").append("div")	
     .attr("class", "tooltip")				
     .style("opacity", 0);
 
 // Adds the svg canvas
-var svg6 = d3.select("#brushandzoom")
+var svg6 = d3.select("#section6")
     .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
+        .attr("width", width6 + margin6.left + margin6.right)
+        .attr("height", height6 + margin6.top + margin6.bottom)
     .append("g")
         .attr("transform", 
-              "translate(" + margin.left + "," + margin.top + ")");
+              "translate(" + margin6.left + "," + margin6.top + ")");
 
 // Get the data
 d3.csv("static/data/yearvsreleases.csv", function(error, data) {
     data.forEach(function(d) {
-        d.date = +d.year;
+        d.date = d.year;
         d.close = +d.movies;
     });
 
@@ -76,7 +76,7 @@ d3.csv("static/data/yearvsreleases.csv", function(error, data) {
     // Add the X Axis
     svg6.append("g")
         .attr("class", "x6 axis")
-        .attr("transform", "translate(0," + height + ")")
+        .attr("transform", "translate(0," + height6 + ")")
         .call(xAxis6);
 
     // Add the Y Axis
