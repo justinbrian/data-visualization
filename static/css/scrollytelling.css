@@ -246,11 +246,3 @@ div.stats div.content div.inner_stats div.stat p:first-of-type {
 
 /* For barchart.
   * --------------------------------------- */
-
-div.barchart {
-   position: absolute;
-   top: 300px;
-   left: 850px;
-   width: 750px;
-   height: 450px
-}
