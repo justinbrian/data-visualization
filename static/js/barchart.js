@@ -1,8 +1,8 @@
 // Using d3-tip to add tooltips to a d3 bar chart.
 
 var margin = { top: 40, right: 20, bottom: 120, left: 80 },
-   width = 800,
-   height = 500;
+   width = 900,
+   height = 460;
 
 var x = d3.scale.ordinal().rangeRoundBands([0, width], 0.1);
 
