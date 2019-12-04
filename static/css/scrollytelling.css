@@ -246,3 +246,27 @@ div.stats div.content div.inner_stats div.stat p:first-of-type {
 
 /* For barchart.
   * --------------------------------------- */
+
+
+/* For about links.
+------------------------------------------- */
+
+/* unvisited link */
+a:link {
+   color: rgb(53, 53, 53);
+}
+
+/* visited link */
+a:visited {
+   color: rgb(0, 0, 0);
+}
+
+/* mouse over link */
+a:hover {
+   color: rgb(0, 119, 10);
+}
+
+/* selected link */
+a:active {
+   color: rgb(0, 0, 0);
+}
