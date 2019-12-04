@@ -1,7 +1,7 @@
 body { font: 12px Arial;}
 
 path { 
-    stroke: steelblue;
+    stroke: rgb(17, 127, 218);
     stroke-width: 2;
     fill: none;
 }
