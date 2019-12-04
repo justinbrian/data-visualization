@@ -1,4 +1,4 @@
-var margin6 = {top: 30, right: 20, bottom: 30, left: 50},
+var margin6 = {top: 30, right: 20, bottom: 30, left: 135},
     width6 = 900 - margin6.left - margin6.right,
     height6 = 400 - margin6.top - margin6.bottom;
 
@@ -63,7 +63,7 @@ d3.csv("static/data/yearvsreleases.csv", function(error, data) {
             div.transition()		
                 .duration(200)		
                 .style("opacity", .9);		
-            div	.html("yr: " + d.date + "<br/>"  + "#: " + d.close)	
+            div	.html("Year: " + d.date + "<br/>"  + "#: " + d.close)	
                 .style("left", (d3.event.pageX) + "px")		
                 .style("top", (d3.event.pageY - 28) + "px");	
             })					

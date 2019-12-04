@@ -3,35 +3,35 @@
 
 @font-face {
    font-family: "Canela Bold";
-   src: url("static/fonts/CanelaWeb-Bold.ttf") format("truetype");
+   src: url("/static/fonts/CanelaWeb-Bold.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Canela";
-   src: url("static/fonts/CanelaWeb-Light.ttf") format("truetype");
+   src: url("/static/fonts/CanelaWeb-Light.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Atlas Grotesk Medium";
-   src: url("static/fonts/AtlasGroteskWeb-Medium.ttf") format("truetype");
+   src: url("/static/fonts/AtlasGroteskWeb-Medium.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Atlas Grotesk Regular";
-   src: url("static/fonts/AtlasGroteskWeb-Regular.ttf") format("truetype");
+   src: url("/static/fonts/AtlasGroteskWeb-Regular.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
 
 @font-face {
    font-family: "Atlas Grotesk Light";
-   src: url("static/fonts/AtlasGroteskWeb-Light.ttf") format("truetype");
+   src: url("/static/fonts/AtlasGroteskWeb-Light.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
