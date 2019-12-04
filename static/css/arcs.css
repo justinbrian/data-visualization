@@ -1,4 +1,4 @@
-path.arcs {
+path {
     fill: #ccc;
     stroke: #333;
     stroke-width: 1.5px;
@@ -6,7 +6,7 @@ path.arcs {
     transition-delay: 150ms;
 }
   
-path.arcs:hover {
+path:hover {
     fill: #999;
     stroke: #000;
     transition-delay: 0;
