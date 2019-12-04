@@ -7,6 +7,7 @@
    font-weight: normal;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Canela";
    src: url("./fonts/CanelaWeb-Light.ttf") format("truetype");
@@ -20,12 +21,14 @@
    font-weight: normal;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Atlas Grotesk Regular";
    src: url("./fonts/AtlasGroteskWeb-Regular.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
+
 @font-face {
    font-family: "Atlas Grotesk Light";
    src: url("./fonts/AtlasGroteskWeb-Light.ttf") format("truetype");
@@ -38,9 +41,11 @@
 #fp-nav ul li a span {
    background: #1a1a1a;
 }
+
 #fp-nav ul li .fp-tooltip {
    color: #1a1a1a;
 }
+
 body {
    font-family: "Atlas Grotesk Light" !important;
    color: #1a1a1a;
@@ -54,23 +59,28 @@ body {
    font-weight: 100;
    margin: 0;
 }
+
 .header h2 {
    font-size: 0.9em;
    font-family: Canela;
    text-transform: uppercase;
    letter-spacing: 0.3em;
 }
+
 #main-title {
    font-size: 2em;
 }
+
 .header {
    text-align: center;
    padding-left: 0px;
 }
+
 .header p {
    font-size: 2em;
    font-weight: 100;
 }
+
 #main-title p {
    font-size: 1em;
 }
@@ -82,12 +92,14 @@ body {
    font-weight: 100;
    font-family: Canela;
 }
+
 .content {
    text-align: left;
    padding-left: 100px;
    padding-right: 100px;
    font-weight: 400;
 }
+
 .content p {
    font-size: 120%;
    width: 80%;
@@ -179,7 +191,7 @@ div.header div.inner_content div.wrapper div p {
    width: 92vw;
 }
 
-div.header div.inner_content div.wrapper div > div {
+div.header div.inner_content div.wrapper div>div {
    color: #d40242;
    font-weight: 700;
    font-size: 4em;
@@ -230,4 +242,15 @@ div.stats div.content div.inner_stats div.stat p:first-of-type {
    color: #0a1526;
    font-size: 1.6em;
    font-weight: 600;
+}
+
+/* For barchart.
+  * --------------------------------------- */
+
+div.barchart {
+   position: absolute;
+   top: 300px;
+   left: 850px;
+   width: 750px;
+   height: 450px
 }

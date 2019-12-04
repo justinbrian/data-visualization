@@ -39,7 +39,7 @@ var tip = d3
 
 // d3.select("body")
 var svg = d3
-   .select("#section4")
+   .select("#barchart")
    .append("svg")
    .attr("width", width + margin.left + margin.right)
    .attr("height", height + margin.top + margin.bottom)
