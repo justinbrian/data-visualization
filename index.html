@@ -4,6 +4,7 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="static/favicon.ico" />
 	<title>The Movie Database (TMDb)</title>
 
 	<!-- ************ FULL PAGE ************** -->
@@ -18,11 +19,11 @@
 
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				anchors: ['title', 'tmdbBackground', 'currentTmdbStats', 'data', 'populargenres', 'mostbudget', 'moviereleasetrend', 'keywords', 'budgettrend', 'correlation', 'header', 'about'],
-				sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, contentColor, contentColor, contentColor, contentColor, contentColor, headerColor, contentColor],
+				anchors: ['title', 'tmdbBackground', 'currentTmdbStats', 'data', 'populargenres', 'moviereleasetrend', 'keywords', 'budgettrend', 'correlation', 'about'],
+				sectionsColor: [headerColor, contentColor, contentColor, headerColor, contentColor, contentColor, contentColor, contentColor, contentColor, contentColor, headerColor],
 				navigation: true,
 				navigationPosition: 'right',
-				navigationTooltips: ['Start', 'What is TMDb?', 'Current Stats', 'Analyzing the Data', 'Popular Genres', 'Most Budget', 'Movie Release Trend', 'Keywords', 'Budget Trend', 'Popularity vs. Profit', 'Header', 'About']
+				navigationTooltips: ['Start', 'What is TMDb?', 'Current Stats', 'Analyzing the Data', 'Popular Genres', 'Movie Release Trend', 'Keywords', 'Budget Trend', 'Popularity vs. Profit', 'About']
 			});
 		});
    </script>	
@@ -64,8 +65,8 @@
 </head>
 <body>
 	<div id="fullpage">
-		<div class="section" id="section0">
-			<div class="header" id="main-title">
+		<div class="section background" id="section0">
+			<div class="header intro" id="main-title">
 				<h1>The Movie Database (TMDb)</h1>
 				<h2>Exploring through lens of data</h2>
 			</div>
@@ -198,18 +199,12 @@
 		</div>
 
 		<div class="section" id="section10">
-			<div class="header">
-				<h1>Header</h1>
-			</div>
-		</div>
-
-		<div class="section" id="section11">
 			<div class="content">
 				<h1>About this project</h1>
 				<p>Our names are Justin Eugenio, and Minquan Li.</p>
 				<p>This was a final project for the first undergraduate data visualization course at CSUS, <a href="https://www.coursicle.com/csus/courses/CSC/196V/">CSC 196V</a>.</p>
 				<p>Special thanks to our professor <a href="https://www.ecs.csus.edu/csc/people/baynes/">Anna Baynes</a>.</p>
-				<p>The The Movie Database (TMDb) <a href="https://www.kaggle.com/juzershakir/tmdb-movies-dataset">dataset</a> from Kaggle has data on 10k+ movies from 1960-2015. Dataset features include popularity, budget, revenue, title, cast, homepage, director, overview, runtime, genres, production_companies, release_date, vote_count, and release_year.</p>
+				<p>The Movie Database (TMDb) <a href="https://www.kaggle.com/juzershakir/tmdb-movies-dataset">dataset</a> from Kaggle has data on 10k+ movies from 1960-2015. Dataset features include popularity, budget, revenue, title, cast, homepage, director, overview, runtime, genres, production_companies, release_date, vote_count, and release_year.</p>
 				</br>
 				<p>Link our embed video here.</p>
 				<iframe src="https://player.vimeo.com/video/219794399" width="608" height="378" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
