@@ -3,7 +3,8 @@
 
 @font-face {
    font-family: "Canela";
-   src: url("/static/fonts/CanelaWeb-Light.ttf") format("truetype");
+   src: url("https://justinbrian.github.io/data-visualization/static/fonts/CanelaWeb-Light.ttf")
+      format("truetype");
    font-weight: normal;
    font-style: normal;
 }
@@ -44,7 +45,7 @@ body {
   * --------------------------------------- */
 .intro h1 {
    font-size: 5em;
-   font-family: Canela;
+   font-family: "Canela", sans-serif;
    font-weight: 100;
    color: rgb(255, 255, 255);
    margin: 0;
