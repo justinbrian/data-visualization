@@ -9,8 +9,8 @@
 }
 
 @font-face {
-   font-family: "AtlasGroteskLight";
-   src: url("/static/fonts/AkzidenzGrotesk-Light.ttf") format("truetype");
+   font-family: "Atlas Grotesk Light";
+   src: url("/static/fonts/AtlasGroteskWeb-Light.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
 }
@@ -26,7 +26,7 @@
 }
 
 body {
-   font-family: AtlasGroteskLight;
+   font-family: "Atlas Grotesk Light" !important;
    color: #1a1a1a;
 }
 
