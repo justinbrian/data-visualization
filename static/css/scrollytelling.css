@@ -23,7 +23,7 @@
 }
 
 @font-face {
-   font-family: "Atlas Grotesk Light";
+   font-family: "AtlasGroteskLight";
    src: url("/static/fonts/AtlasGroteskWeb-Light.ttf") format("truetype");
    font-weight: normal;
    font-style: normal;
@@ -40,7 +40,7 @@
 }
 
 body {
-   font-family: "Atlas Grotesk Light";
+   font-family: AtlasGroteskLight;
    color: #1a1a1a;
 }
 
