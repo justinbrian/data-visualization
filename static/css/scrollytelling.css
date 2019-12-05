@@ -10,7 +10,8 @@
 
 @font-face {
    font-family: "Atlas Grotesk Light";
-   src: url("/static/fonts/AtlasGroteskWeb-Light.ttf") format("truetype");
+   src: url("https://justinbrian.github.io/data-visualization/static/fonts/AtlasGroteskWeb-Light.ttf")
+      format("truetype");
    font-weight: normal;
    font-style: normal;
 }
