@@ -1,5 +1,5 @@
 # CSC196V - Data Visualization
- Final project.
+ Final group project.
  
 # Implementation
  - D3.js for interactive visualizations and images for static visualizations.
